@@ -57,7 +57,40 @@
 				<h1>Welcome to the page!</h1>
 				<p>This is my main content.</p>
 			</div>
-		
+			<div class="col-md-12">
+				<h1>Welcome to the page!</h1>
+				<p>This is my main content.</p>
+			</div>
+			<div class="col-md-12">
+				<h1>Welcome to the page!</h1>
+				<p>This is my main content.</p>
+			</div>
+			<div class="col-md-12">
+				<h1>Welcome to the page!</h1>
+				<p>This is my main content.</p>
+			</div>
+			<div class="col-md-12">
+				<h1>Welcome to the page!</h1>
+				<p>This is my main content.</p>
+			</div>
+			<div class="col-md-12">
+				<h1>Welcome to the page!</h1>
+				<p>This is my main content.</p>
+			</div>
+			<div class="col-md-12">
+				<h1>Welcome to the page!</h1>
+				<p>This is my main content.</p>
+			</div>
+			<div class="col-md-12">
+				<h1>input filed</h1>
+				<p><input type="text" placeholder="Search here"></p>
+			</div>
+			<div class="col-md-12">
+				<h1>Welcome to the page!</h1>
+				<button type="button" class="btn btn-info load">Click to Load</button>
+			</div>
+			
+			
     </div>
 
     <!-- jQuery and Bootstrap JS -->
@@ -70,11 +103,13 @@
 		window.end_loader = function() {
 			$('body').removeClass('loading')
 		}
-        $(document).ready(function() {
-			start_loader();
-			setTimeout(function() {
-               end_loader();
-            }, 1000);
+        $(document).ready(function() {			
+			$('.load').on('click', function(){
+				start_loader();
+				setTimeout(function(){
+					end_loader();
+				},1000);
+			})
           
         });
     </script>
